@@ -171,7 +171,7 @@ private:
     static void validate(const string& pwd) {
         // TODO: Check length >= 8 and hasDigit
         // Throw std::invalid_argument with descriptive message if invalid
-        if (pwd.length()>8){
+        if (pwd.length()<8){
             throw invalid_argument("invalid a");
         }
         if(!hasDigit(pwd)){
